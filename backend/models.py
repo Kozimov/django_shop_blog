@@ -11,6 +11,7 @@ class Category(models.Model):
 
 
 class Post(models.Model):
+    tanlov = models.ForeignKey(Category, on_delete=models.CASCADE)
     nomi = models.CharField(max_length=20)
     rasm = models.ImageField(upload_to="rasmlar/")
 

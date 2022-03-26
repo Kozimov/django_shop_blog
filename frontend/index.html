@@ -2,7 +2,14 @@
 
 
 {% block content %}
+<br><br><br><br><br>
 
-    korinish
-    
+    {% for post in posts %}
+
+        <img src="{{ post.rasm.url }}" alt="rasm" width="200">
+        <h1>{{ post.nomi }}</h1>
+
+    {% endfor %}
+
+<br><br><br><br><br>    
 {% endblock content %}
